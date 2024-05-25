@@ -14,7 +14,7 @@ import java.nio.charset.Charset;
 @RequestMapping("blob")
 public class BlobController {
 
-    @Value("azure-blob://testcontainer/test.txt")
+    @Value("azure-blob://topics/test.txt")
     private Resource blobFile;
 
     @GetMapping("/readBlobFile")
